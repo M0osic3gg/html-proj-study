@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPIC FAIL</title>
+    <link rel="stylesheet" href="/css/anim.css">
+</head>
+<body>
+    <h1 id="input"> EPIC FAIL!!! </h1>
+    <img id="cumon" src="/image/cumon.gif" alt="Come On, Step It Up! Written in childlike handwriting, jittering and misspelled.">
+    <img id="sanic" src="/image/Sanic.png" alt="Sanic image, unskilled rendering of the character Sonic the Hedgehog.">
+<script>
+function getMouseCoords(e) {
+  var e = window.event;
+}
+
+  var followCursor = (
+  function() {
+  var s = document.getElementById('sanic');
+  s.style.position = 'absolute';
+
+  return {
+    init: function() {
+      document.body.appendChild(s);
+    },
+
+    run: function(e) {
+      var e = window.event;
+      s.style.left = e.clientX + 'px';
+      s.style.top = e.clientY + 'px';
+      getMouseCoords(e);
+    }
+  };
+}());
+
+window.onload = function() {
+  followCursor.init();
+  document.body.onmousemove = followCursor.run;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  background-color: black;
+  color: #ddd;
+  font-family:'Courier New', Courier, monospace;
+  font-size: large;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: larger;
+  color: rgb(117, 143, 236);
+}
+h2{
+  font-size: x-large;
+  font-family: cursive;
+}
+a:link {color:#000000;}
+a:visited {color:#000000;}
+a:hover {color:#5b00b5;}
+a:active {color:#5b00b5;}
+/* index related */
+.login {
+  cursor: pointer;
+  border-radius: 5px;
+  color: #bada55;
+  background-color: #420666;
+  border: 0;
+  padding: 2%;       
+}
+
+.farty {
+  letter-spacing: 2px;
+  background-color: #b00b51;
+  margin-left: 26%;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #bada55;
+  border: 0;
+  padding: 2%;
+}
+
+.farty button:hover {
+  background-color: #f0f000;
+  transform: scale(1.1);
+  color: #000;
+  transition: 0.4s;
+}
+
+.form-login {
+  margin-left: 20%; margin-right: 20%; font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  padding: 10%;
+}
+
+/* etc */
+input {
+  border: 0;
+  padding-left: 10%;
+  padding-right: 40%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(41, 6, 65);
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(98, 0, 136);
+  overflow-x: hidden;
+}
+
+.sidenav a {
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #420666;
+  color: rgb(255, 255, 255);
+}
+
+.sidenav a:hover {
+  background-color: #f0f000;
+  transform: scale(1.1);
+  color: #000;
+  transition: 0.4s;
+}
+
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
+
+/* calc related */
+#derCalc {
+  margin-left: 10em;
+  margin-top: 50px;
+}
+
+button[v2] {
+  height: 210px;
+}
+button[h2] {
+  width: 210px;
+}
+button[h1] {
+  width: 430px;
+}
+
+.numbers {
+  cursor: pointer;
+  border: 0;
+  line-height: 2.5;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(30, 27, 27);
+  text-shadow: 1px 1px 1px rgb(188, 188, 188);
+  border-radius: 10px;
+  background-color: rgb(98, 220, 242);
+  background-image:
+    linear-gradient(
+      to top left,
+      rgba(0, 0, 0, .2),
+      rgba(0, 0, 0, .2) 30%,
+      rgba(0, 0, 0, 0));
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.numbers:hover {
+  background-color: rgba(129, 227, 242, 0.765);
+}
+
+.numbers:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, .6),
+    inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.fail {
+  text-align: center;
+  font-size: larger;
+  color: #000;
+}
+
+/*gallery*/
+/* column pic */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+/* Style the images of gallery */
+.column img {
+  cursor: zoom-in;
+  padding: 5px;
+}
+
+.column img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.column img:active {
+  opacity: 1;
+}
+
+/* Expanding image text */
+#placeholder {
+  position: absolute;
+  left: 200px;
+  padding-top: 100px;
+  font-size: 28px;
+  color: #EFECE9;
+}
+
+#placeholder:hover {
+  color: #ADE3BD;
+  cursor: wait;
+}

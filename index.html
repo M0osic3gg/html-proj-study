@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Login to SlayerzX</title>
+</head>
+<body>
+<img src="/image/logo.jpg" srcset="/image/logo.jpg 1300w, /image/logo-mini.jpg 900w"></img>
+<div class="form-login">
+    <form action="/login.php" method="post">
+        <label for="uname">Slayer Name</label> <br> <br>
+        <input type="text" placeholder="Enter Slayer Name" name="uname"><br>
+        <br> <label for="passwd">Password</label> <br> <br>
+        <input type="password" placeholder="Enter your Password" name="passwd"> 
+        <br> <br> <br> <br> <label for="submit">I am ready </label> <br> <br><button type="submit" class="login">The Ultimate Test</button>
+  </form>
+</div>
+<div class="fart-button">
+    <br><br><br>
+    <button class="farty" type="button" onclick="sound()">Click if you dare</button>
+    <br><br><br>
+    <button class="farty" type="button" onclick="soundLoud()">A Louder Variant</button>
+    <br><br><br><br>
+</div>
+<script>
+    function sound(){
+     var snd = new Audio('/other/fart.mp3')//wav is also supported
+     snd.play()//plays the sound
+}
+function soundLoud(){
+     var sound = new Audio('/other/fart-loud.mp3')//wav is also supported
+     sound.play()//plays the sound
+}
+</script>
+</body>
+</html>

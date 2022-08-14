@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+	<title>Image Gallery</title>
+</head>
+
+<body>
+	<div style="text-align:center">
+		<h1>Image Gallery</h1>
+        <a href="tindex.html" style="color: rgb(41, 196, 152);"><-------Return to Main Page</a>
+	</div>
+    <script>
+        function scr(imgs) {
+            var expandImg = document.getElementById("expand");
+            var imgText = document.getElementById("placeholder");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+	<!-- gallery pic -->
+	<div class="row">
+		<div id="placeholder">
+			<p>Click an image to expand it here!</p>
+		</div>
+
+		<div class="column">
+			<img src="image/i.png" style="width:100%" onclick="scr(this);">
+            <h2>Eye</h2>
+			<img src="/image/trophy.png" style="width:100%" onclick="scr(this);">
+            <h2>Trophy Room</h2>
+			<img src="/image/123.png" style="width:100%" onclick="scr(this);">
+            <h2>Konata</h2>
+            <img src="/image/hana.png" style="width:100%" onclick="scr(this);">
+            <h2>Hananya</h2>
+		</div>
+
+		<div class="column">
+			<span onclick="this.parentElement.style.display='none'"></span>
+			<img id="expand" style="width:300%; height: 50%; margin-top: 15px;">
+		</div>
+	</div>
+</body>
+
+</html>
