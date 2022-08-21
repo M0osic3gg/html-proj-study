@@ -11,4 +11,5 @@ else if (operand == "*") alert(first*second)
 else if (operand == "/" || operand == "\\") alert(first/second)
 else if (operand == "%") alert(first%second)
 else alert("what are you doing in my swamp? i mean, error. try again.")
+permission = prompt("Continue calculating?")
 }
