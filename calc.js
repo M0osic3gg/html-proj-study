@@ -1,4 +1,3 @@
-permission = prompt("Do you want to use JScalc? (Write 'yes' to continue)");
 first = prompt("enter your 1st num")
 first = Number(first);
 second = prompt("enter your 2nd num")
